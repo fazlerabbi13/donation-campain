@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
     return (
-        <div className="w-[1230px] h-[500px] bg-slate-500 mx-auto">
+        <div className="w-[1380px] bg-slate-500 mx-auto">
 
             <header className="mt-10 flex justify-between items-center">
-                <img src="./Logo.png" alt="" />
+                <img  src="./Logo.png" alt="" />
                 <ul className="flex gap-10 text-xl">
                     <li>
                     <NavLink
