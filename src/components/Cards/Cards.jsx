@@ -2,7 +2,6 @@ import DonationsCard from "./DonationsCard";
 
 const Cards = ({cards}) => {
 
-    console.log(cards);
     return (
         <div>
             <h1 className="text-2xl text-center py-5">All Donation Items</h1>

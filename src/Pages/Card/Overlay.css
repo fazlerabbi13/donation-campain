@@ -1,0 +1,24 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 500px; /* Set the width of the container */
+  }
+  
+  .image {
+    max-width: 100%;
+  }
+  
+  .overlay-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for the overlay */
+    color: white; /* Text color for the overlay content */
+    padding: 30px;
+    text-align: center;
+    width: 100%; /* Make the overlay content full-width */
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0;
+  }
+  
