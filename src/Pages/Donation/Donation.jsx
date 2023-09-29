@@ -21,12 +21,25 @@ const Donation = () => {
             setNofound('no data found')
         }
     }, [])
-    console.log(seeALL)
+   
+    const handleDonationDelete =()=>{
+        localStorage.clear()
+        setDonation([])
+        setNofound('no data found')
+    }
+
     return (
         <div>
             {
                 noFound ? <p className="h-[60vh] flex justify-center items-center">{noFound}</p> : <div>
 
+                    <div className="text-center mt-10">
+                        {
+                            donation.length>0 && <button onClick={handleDonationDelete}
+                             className="w-[150px] h-[30px] bg-red-400">Delete Donation</button>
+                        }
+                    </div>
+                    
                     <div className="grid grid-cols-2">
                        {
                         seeALL?donation.map(card =><DonationCards key={card.id} card={card}></DonationCards>)
@@ -34,7 +47,7 @@ const Donation = () => {
                        }
                        
                     </div>
-                   <div className="text-center mt-10">
+                   <div className="text-center mt-10 mb-5">
                    <button onClick={()=>setSeeAll(!seeALL)} className="w-[100px] h-[30px] bg-red-400">
                     {seeALL?"See less":"See ALL"}
                    </button>
