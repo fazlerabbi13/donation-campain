@@ -48,9 +48,9 @@ const Donation = () => {
                        
                     </div>
                    <div className="text-center mt-10 mb-5">
-                   <button onClick={()=>setSeeAll(!seeALL)} className="w-[100px] h-[30px] bg-red-400">
+                   {donation.length> 1 && <button onClick={()=>setSeeAll(!seeALL)} className="w-[100px] h-[30px] bg-red-400">
                     {seeALL?"See less":"See ALL"}
-                   </button>
+                   </button>}
                    </div>
                 </div>
                 

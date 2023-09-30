@@ -1,8 +1,13 @@
 
+
 const Statistics = () => {
+
     return (
         <div>
-            statistics
+         
+        statistics
+        
+
         </div>
     );
 };
