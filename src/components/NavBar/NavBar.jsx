@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
     return (
-        <div className="w-[1380px] bg-slate-500 mx-auto">
+        <div className="w-[1380px] mx-auto">
 
             <header className="mt-10 flex justify-between items-center">
                 <img  src="/Logo.png" alt="" />

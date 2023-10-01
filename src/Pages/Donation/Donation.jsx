@@ -36,7 +36,7 @@ const Donation = () => {
                     <div className="text-center mt-10">
                         {
                             donation.length>0 && <button onClick={handleDonationDelete}
-                             className="w-[150px] h-[30px] bg-red-400">Delete Donation</button>
+                             className="w-[150px] h-[30px] rounded-lg bg-gray-300">Delete Donation</button>
                         }
                     </div>
                     
@@ -48,7 +48,7 @@ const Donation = () => {
                        
                     </div>
                    <div className="text-center mt-10 mb-5">
-                   {donation.length> 1 && <button onClick={()=>setSeeAll(!seeALL)} className="w-[100px] h-[30px] bg-red-400">
+                   {donation.length> 1 && <button onClick={()=>setSeeAll(!seeALL)} className="w-[100px] h-[30px] rounded-xl bg-gray-300">
                     {seeALL?"See less":"See ALL"}
                    </button>}
                    </div>

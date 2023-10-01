@@ -1,0 +1,13 @@
+.bg{
+    background-image: url('../../../../public/Rectangle\ 4281.jpg');
+    height:60vh;
+    width: 1380px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1380px;
+    height: 60vh;
+    background:rgba(255, 255, 255, 0.95) ;
+}
